@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="shortcut icon" href="bandeira.ico">
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Comentários</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">De um feedback</h1>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Qual seu nível de satisfação com o site</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="nada" checked>Não satisfeito   <br>
+                
+             
+                    <input type="radio" name="devweb" value="pouco">Pouco satisfeito<br>
+             
+          
+                    <input type="radio" name="devweb" value="normal">Satisfeito<br>
+            
+         
+                    <input type="radio" name="devweb" value="muito">Muito Satisfeito
+                </label>
+            </div>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="senioridade"><strong>Sua idade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Escolha</option>
+                  <option>10-18</option>
+                  <option>19-55</option>
+                  <option>56-99</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Deixe um comentário: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+
+            <!-- Caixa de texto -->
+            
+            <!-- Botão para enviar o formulário -->
+            <div>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>   
+                </div>         
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
